@@ -1,3 +1,0 @@
-# linux_log
-
-1. WEEK 7 : GIT SETUP AND UPLOAD TEST END!
