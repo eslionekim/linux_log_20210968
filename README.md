@@ -1,6 +1,6 @@
 # linux_log_20210968
 리눅스 로그 저장소
 
-WEEK 13 : practice
+WEEK 11 : practice
 
 
