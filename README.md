@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ef9efc22-89c4-4b14-80a3-123814223ba9)# 2주차 수업 내용
+# 2주차 수업 내용
 ## 계정만들고 부팅 및 종료
 ![image](https://github.com/user-attachments/assets/620ad3c2-e685-4163-b18c-3f75d06112f8)
 ![image](https://github.com/user-attachments/assets/e221f779-b69a-4b93-a95e-18f8a2aeba75)
@@ -63,7 +63,7 @@ sudo userdel –rf test
 ![image](https://github.com/user-attachments/assets/668cfb72-fa94-4941-9542-f4759c15291a)
 
 # 5주차 간략 문제
-## 1. 현재 umask기본값은 022인데 폴더 및 디렉 생성 시 권한을 750으로 변경하고싶어. 기본 umask값 몇으로 해야할까? 027
+## 1. 현재 umask기본값은 022인데 폴더 및 디렉 생성 시 권한을 750으로 변경하려면 기본 umask값 몇으로 해야하는가? 027
 
 ## 2. 홈 디렉터리에 임시파일 temp.txt 생성하고 소유자,그룹권한을 root:root로 수정하고 허가권한을 700으로 수정
 touch /home/temp.txt
@@ -100,8 +100,7 @@ chattr +i 파일명
 &가 백그라운드에서 실행하게 함
 
 ## 3. 그림과 같이 실시간 프로세스를 출력하는 명령어는? top
-![image](https://github.com/user-attachments/assets/c3bc6cc6-3625-4ec7-bea2-ca9ceb8eba62)
-ps
+![image](https://github.com/user-attachments/assets/ef9efc22-89c4-4b14-80a3-123814223ba9)
 pstree
 jobs
 top 답: 시스템에서 실행중인 프로세스 실시간 모니터링 도구
@@ -129,15 +128,15 @@ Git push origin main
 ![image](https://github.com/user-attachments/assets/a77329e9-a632-428f-a350-51e8c9e5542b)
 
 # 9주차 간략 문제
-1 새 scsi -> 1GB VDI 2개 -> name: RAID0.vdi , RAID1.vdi
-2 터미널 fdisk -l -> RAID0.vdi , RAID1.vdi check
-3 fdisk /dev/sdc랑 sdd -> n->p->t(종류변경)->fd(raid타입으로)->p->w(확인 후 종료) : 파티션 생성 및 설정
-4 mdadm --create /dev/md/raid0 --level=0 -raid-devices=2 dev/sdd1 /dev/sdc1 : mdadm으로 레이드 그룹 생성
-5 mdadm —detail —scan : 생성된 raid 정보 확인
-6 mkfs.ext4 /dev/md/raid0 : raid0을 ext4로 포맷
-7 mkdir /new_raid0 : 사용할 폴더 생성
-8 mount /dev/md/raid0 /new_raid0/ : 마운트
-9 df –h : 잘 연동되었는지 확인
+### 1 새 scsi -> 1GB VDI 2개 -> name: RAID0.vdi , RAID1.vdi
+### 2 터미널 fdisk -l -> RAID0.vdi , RAID1.vdi check
+### 3 fdisk /dev/sdc랑 sdd -> n->p->t(종류변경)->fd(raid타입으로)->p->w(확인 후 종료) : 파티션 생성 및 설정
+### 4 mdadm --create /dev/md/raid0 --level=0 -raid-devices=2 dev/sdd1 /dev/sdc1 : mdadm으로 레이드 그룹 생성
+##### 5 mdadm —detail —scan : 생성된 raid 정보 확인
+##### 6 mkfs.ext4 /dev/md/raid0 : raid0을 ext4로 포맷
+##### 7 mkdir /new_raid0 : 사용할 폴더 생성
+##### 8 mount /dev/md/raid0 /new_raid0/ : 마운트
+##### 9 df –h : 잘 연동되었는지 확인
 ![image](https://github.com/user-attachments/assets/b126bcf1-718a-4ecb-af0d-00c4ddbd1d7b)
 
 # 10주차 수업 내용
@@ -177,16 +176,16 @@ Git push origin main
 ## Zap에서 데모 사이트 취약점 스캔 후 대표 취약성 상위 5개와 해결책 정리
 ![image](https://github.com/user-attachments/assets/2e31e9af-b7f7-42f0-b1f5-fc51c5e6110f)
 # 상위 5개 취약점과 해결책
-(1) Cross Site Scripting : 입력 값 검증 부족으로 악의적인 스크립트가 삽입되어 실행
-- 사용자 입력을 철저히 검증하고 유효성 검사 수행
-(2) SQL Injection : SQL 쿼리에 악의적인 코드를 삽입해 데이터베이스를 조작할 수 있음
-- 데이터베이스 계정에 필요한 최소 권한만 할당하거나 사용자 입력을 파라미터화하여 쿼리에 직접 삽입되지 않도록 함.
-(3) SQL –injection – SQLite : SQLite 쿼리에 사용자 입력이 적절히 필터링 되지 않아 발생
-- 숫자, 문자열 형식을 확인하여 입력 데이터를 검증하거나 SQLAlchemy, Sequelize 활용
-(4) Absence of Anti-CSRF Token : CSRF 토큰이 없어 공격자가 사용자의 권한으로 악의적 요청을 보낼 수 있음 
-- CSRF 토큰을 사용하여 각 요청마다 유효성 검사 수행
-(5) Content Security Policy (CSP) Header Not Set : CSP 헤더가 설정되지 않아 XSS 공격을 막기 어려움
-- CSP 헤더를 추가하여 공격 막기
+##### (1) Cross Site Scripting : 입력 값 검증 부족으로 악의적인 스크립트가 삽입되어 실행
+사용자 입력을 철저히 검증하고 유효성 검사 수행
+##### (2) SQL Injection : SQL 쿼리에 악의적인 코드를 삽입해 데이터베이스를 조작할 수 있음
+데이터베이스 계정에 필요한 최소 권한만 할당하거나 사용자 입력을 파라미터화하여 쿼리에 직접 삽입되지 않도록 함.
+##### (3) SQL –injection – SQLite : SQLite 쿼리에 사용자 입력이 적절히 필터링 되지 않아 발생
+숫자, 문자열 형식을 확인하여 입력 데이터를 검증하거나 SQLAlchemy, Sequelize 활용
+##### (4) Absence of Anti-CSRF Token : CSRF 토큰이 없어 공격자가 사용자의 권한으로 악의적 요청을 보낼 수 있음 
+CSRF 토큰을 사용하여 각 요청마다 유효성 검사 수행
+##### (5) Content Security Policy (CSP) Header Not Set : CSP 헤더가 설정되지 않아 XSS 공격을 막기 어려움
+CSP 헤더를 추가하여 공격 막기
 
 # 13주차 수업 내용
 ## htop을 활용하여 모니터링
