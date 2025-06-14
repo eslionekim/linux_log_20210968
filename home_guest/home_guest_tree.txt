@@ -1,0 +1,85 @@
+/home/guest
+├── 2025-05-23-ZAP-Report-
+│   ├── normalize
+│   ├── themes
+│   └── zap32x32.png
+├── 2025-05-23-ZAP-Report-.html
+├── apache_files_removal2.sh
+├── apache_files_removal.sh
+├── apache_module_disable2.sh
+├── apache_module_disable.sh
+├── a.txt
+├── copyfile1.txt
+├── Desktop
+│   ├── KakaoTalk.desktop
+│   └── winehq.key
+├── Documents
+│   └── KakaoTalk Downloads
+├── Downloads
+│   ├── cpu_test.sh
+│   ├── KakaoTalk_Setup.exe
+│   ├── mem_test.sh
+│   ├── net_test.sh
+│   ├── pracice_test.sh
+│   └── ZAP_2_16_1_unix.sh
+├── example
+│   ├── hnner3.txt
+│   ├── lnner3.txt -> newfile1.txt
+│   └── newfile1.txt
+├── KakaoTalk
+│   ├── ChangeLogs_en.md
+│   ├── ChangeLogs_ja.md
+│   ├── ChangeLogs_ko.md
+│   ├── CrashReporter.exe
+│   ├── Diagreport.exe
+│   ├── EULA_en.txt
+│   ├── EULA_ja.txt
+│   ├── EULA_ko.txt
+│   ├── full_version.info
+│   ├── KakaoTalk.exe
+│   ├── resource
+│   ├── skin
+│   ├── uninstall.exe
+│   ├── version.info
+│   ├── Vox3.dll
+│   └── Vox.dll
+├── modules.txt
+├── Music
+├── new_disk
+├── new_file1.txt
+├── newfile2.txt
+├── newfile3.txt
+├── new_folder
+│   └── thecat.txt
+├── permission
+├── Pictures
+├── Public
+├── shared
+│   ├── apache_files_removal2.sh
+│   ├── apache_files_removal.sh
+│   ├── apache_module_disable2.sh
+│   ├── apache_module_disable.sh
+│   ├── zombie
+│   ├── zombie_process1.c
+│   └── zombie_process2.sh
+├── shell_logs
+│   ├── git_upload.sh
+│   ├── home_guest
+│   ├── new_file2.txt
+│   ├── new_file3.txt
+│   ├── new_file.txt
+│   ├── README.md
+│   ├── root
+│   └── screenShot
+├── snap
+│   └── snap-store
+├── Templates
+├── test.sh
+├── thecat.txt
+├── umask_027
+├── umask_027.txt
+├── Videos
+├── wordpress
+└── wordpress-6.8-ko_KR.zip
+
+27 directories, 55 files
