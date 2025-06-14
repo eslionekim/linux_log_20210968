@@ -128,10 +128,10 @@ Git push origin main
 ![image](https://github.com/user-attachments/assets/a77329e9-a632-428f-a350-51e8c9e5542b)
 
 # 9주차 간략 문제
-### 1 새 scsi -> 1GB VDI 2개 -> name: RAID0.vdi , RAID1.vdi
-### 2 터미널 fdisk -l -> RAID0.vdi , RAID1.vdi check
-### 3 fdisk /dev/sdc랑 sdd -> n->p->t(종류변경)->fd(raid타입으로)->p->w(확인 후 종료) : 파티션 생성 및 설정
-### 4 mdadm --create /dev/md/raid0 --level=0 -raid-devices=2 dev/sdd1 /dev/sdc1 : mdadm으로 레이드 그룹 생성
+##### 1 새 scsi -> 1GB VDI 2개 -> name: RAID0.vdi , RAID1.vdi
+##### 2 터미널 fdisk -l -> RAID0.vdi , RAID1.vdi check
+##### 3 fdisk /dev/sdc랑 sdd -> n->p->t(종류변경)->fd(raid타입으로)->p->w(확인 후 종료) : 파티션 생성 및 설정
+##### 4 mdadm --create /dev/md/raid0 --level=0 -raid-devices=2 dev/sdd1 /dev/sdc1 : mdadm으로 레이드 그룹 생성
 ##### 5 mdadm —detail —scan : 생성된 raid 정보 확인
 ##### 6 mkfs.ext4 /dev/md/raid0 : raid0을 ext4로 포맷
 ##### 7 mkdir /new_raid0 : 사용할 폴더 생성
