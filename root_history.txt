@@ -1,0 +1,1096 @@
+cat etc/shadow
+exit
+cd /boot
+ls -al
+clear
+du -h /boot
+cd /
+cd /guest
+cd /home/guest
+pwd
+touch newfile1.txt
+ls -al newfile1.txt
+echo "new file creationg" > newfile2.txt
+ls -al newfile2.txt
+cat > newfile3.txt
+mv newfile1.txt new_file1.txt
+pwd
+apt-get update
+ls -al
+apt-get install rename
+ls
+clear
+mkdir example
+cd example
+ls
+ls -al
+touch newfile1.txt
+ls -al
+ls -ali
+stat newfile1.txt
+ln -s newfile1.txt lnner3.txt
+ls -ali
+stat newfile1.txt
+stat lnner3.txt
+ln newfile1.txt hnner3.txt
+ls -ali
+exit
+pwd
+sudo passwd root
+ls -l /etc/shadow
+cat /etc/shadow
+clear
+adduser guest2
+cd /home
+ls -al
+cd guest
+cd ..
+cd guest2
+ls
+ls -al
+cat etc/shadow
+clear
+man hier
+cd /
+pwd
+ls -al
+clear
+cd /bin
+ls -al
+clear
+cd /sbin
+ls -al
+ls
+cd /root
+ls -al
+clear
+history
+cd /home/guest
+ls -al
+cd /
+ls -al
+cd /home
+ls -al
+cd /guest
+cd /home/guest
+ls -al
+clear
+su root
+exit
+pwd
+su guest
+exit
+cat etc/shadow
+sudo cat/etc/shadow
+ls -al
+pwd
+su root
+exit
+apt-get update
+apt-get install net-tools
+clear
+ifconfig
+apt-get install openssh-server
+groupadd -g 1004 angel
+sudo adduser angel1
+sudo adduser angel2
+grep "angel" /etc/group
+usermod -g angel angel1
+usermod -g angel angel2
+grep "angel" /etc/group
+id angel1
+id angel2
+useradd -s /bin/sh -d /home/angel3 -g 1004 angel3
+id angel3
+grep "angel" /etc/group
+groupadd -G 1666 monster
+groupadd -g 1666 monster
+groupadd -g 8282 mother
+usermod -a -G monster,mother angel1
+id angel1
+groups angel1
+groupdel mother
+id angel1
+groupdel angel
+getent passwd guest
+getent passwd | awk -F: '$3>=1000 && $3 <60000{print $1 ":" $6}'
+awk -F: '($2 ==""||$2\\"!"){print $1}' /etc/shadow
+awk -F: '($2 ==""||$2||"!"){print $1}' /etc/shadow
+su guest
+sudo chage -E 30 -m 5 -M 10 -W 1 guest2
+sudo chage -1 guest2
+cat /etc/shadow
+su guest
+passwd root
+su guest
+su guest
+ls
+sudo userdel -rf guest3
+ls
+grep guest3 /etc/passwd
+passwd root
+cd ..
+cd /home/etc
+cd /etc
+passwd root
+cat /etc/login.defs | more
+clear
+sudo change -| guest
+sudo change -l guest
+sudo change -i guest
+sudo change -I guest
+sudo chane -1 guest
+sudo change -1 guest
+cd ..
+su guest
+sudo mkdir guest_text
+ls
+usermod -d /home/guest_test guest2
+grep guest2 /etc/passwd
+ls
+userdel -rf guest3
+su guest
+sudo adduser guest3
+ls
+su guest
+cd /etc/ssh/sshd_config
+cd /etc/ssh/sshd
+gedit /etc/ssh/sshd_config
+exit
+cd shared
+mount -t vboxsf shared /home/guest/shared/
+rm test.sh
+ls
+ls -al
+touch test.tetss
+ls
+passwd root
+chmod 777 /home/guest/shared
+cd shared/
+chmod 777 /home/guest/shared
+cd..
+chown guest2:guest2 new
+chown guest2:guest2 new_folder
+sudo chown guest2:guest2 new_folder
+mkdir new_folder
+chown guest2:guest2 new_folder
+chown guest2:guest2 copyfile1.txt
+cat copyfile1.txt
+ls -al>copyfile1.txt
+su guest
+chmod 777 permission.txt
+chmod 777 permission
+ls -al
+cd /home
+ls -al
+cd /home/guest
+ls -al
+chmod 777 permission
+ls -al permission
+ls -al /usr/bin/passwd
+find /usr -perm -4000
+find /usr -perm -2000
+find /etc -type f -perm -o=w 3exec ls -l {} \;
+mount -t vboxsf shared /home/guest4/shared
+mount -t vboxsf shared /home/guest/shared
+mount -t vboxf shared /home/guest/shared/test.tetss
+lsmod \ gep vboxsf
+cd /home/guest
+gedig test.sh
+gedit test.sh
+crontab -e
+crontab -i
+exit
+sudo reboot
+adduser e
+su e
+cat /etc/shadow
+passwd root
+su guest
+cat /etc/shadow
+cat -n  /etc/passwd
+cat /etc/shadow
+su guest
+deluser --remove-home e
+exit
+cd ..
+ls
+deluser --remove-home e
+ls
+pwd
+man hier
+su guest
+exit
+apt-get update
+apt-get install gcc
+vi zombie.c
+mount -t vboxsf shared /home/guest/shared/
+ls -ld /home/guest/shared
+usermod -aG vboxsf guest
+mount -t vboxsf shared /home/guest/shared/
+u
+mount -t vboxsf shared /home/guest/shared/
+groups
+lsmod | vboxsf
+lsmod | grep vboxsf
+mount -t vboxsf shared /home/guest/shared/
+su guest
+mount -t vboxf shared /home/guest/shared/
+mount -t vboxsf shared /home/guest/shared/
+groups
+groupadd vboxsf
+usermod -aG vboxsf root
+mount -t vboxsf shared /home/guest/shared/
+usermod -aG vboxsf guest
+mount -t vboxsf shared /home/guest/shared/
+su root
+mount -t vboxsf shared /home/guest/shared/
+gcc -o zombie test zombie_process1.c
+ls
+su guest
+exit
+mount -t vboxsf shared /home/guest/shared/
+ls
+cd ..
+cd shared
+ls
+./zombie &
+mount -t vboxsf shared /home/guest/shared/
+ls
+ps -aux | grep 'Z'
+su guest
+mount -t vboxsf shared /home/guest/shared/
+ps -aux | grep 'Z'
+lsmod | grep vboxsf
+groups
+ls -al zombie.c
+ls -al zombie_process1.c
+ls
+reboot
+cd ../shared
+mount -t vboxsf shared /home/guest/shared/
+ls
+ls -al
+cd ..
+ls
+cd shared
+ls
+ls -al zombie.c
+ls -al zombie
+ps -aux | grep 'Z'
+./zombie &
+ps -aux | grep 'Z'
+exit
+cat .bash_history
+cat .bash_logout
+ls -a
+cd ..
+ls -a
+cd guest
+cat Downloads
+ls -al
+cat /dev
+cd /dev
+ls
+cd /boot
+ls -a
+du /boot
+du -h /boot
+du /guest
+ls
+ls -a
+du grub
+du vmlinuz
+cd /home
+ls -a
+du guest
+cd /etc
+ls -l | more
+cat login.defs | more
+ls -a
+ls
+file legal
+exit
+pwd
+cd /root
+pwd
+ls a
+ls -al
+ls a
+cd /usr
+ls
+cd ..
+ls
+cd home
+ls
+cd guest
+ls
+cd /usr/bin
+ls
+cd lbin
+cd /bin
+pwd
+cd ..
+pwd
+ls
+cd /sbin
+ls
+which
+which cd
+which ls
+ls
+cd ..
+ls
+man bin
+man usr
+man /bim
+man run
+man home
+cd home
+ls
+cd guest
+ls
+man Documents
+man shared
+man cd
+man ls
+man ls -al
+man man
+man
+man | exit
+man cd
+su guest
+exit
+find / -name "ls"
+find /home -name "ls"
+find /home/guest -name "*.txt" -type f
+find / -type d -name "linux"
+sudo find -type d -name "linux"
+sudo find / -type d -name "linux"
+sudo fine / -name "*linux" -type d
+sudo fine / -name "*linux*" -type d
+sudo find / -name "*linux*" -type d
+find / -name "*" -mtime -1 -type f
+clear
+fine / -name "*ls*" -atime 0 -type l
+find / -name "*ls*" -atime 0 -type l
+find /home/guest/ -empty
+ls -al
+touch /home/guest/eunseo a b c
+cd eunseo
+ls -al
+ls
+find / -name "a"
+touch a
+touch b
+touch c
+ls -al
+cd ..
+find /home/guest/eunseo -name "a"
+rm /home/guest/eunseo a b c
+cd eunseo
+rm a b c
+ls -al
+touch a.txt
+touch b.txt
+cd ..
+find /home/guest/eunseo -name "*txt" -delete
+cd eunseo
+ls -al
+find /home/guest -name "*txt" -size -1024c
+exit
+grep -m 10 -rn "a" * > new
+cat new
+clear
+rm new
+ls -a
+ls -d ~/* > list.txt
+cat list.txt
+cd list.txt
+rm list.txt
+ls -a
+find / -name "ls"
+find . -name "ls"
+find / -name "game_config.xml"
+find /root -name "*alias" -n -type f
+exit
+mount -t vboxsf shared /home/guest/shared
+ls -al
+exit
+usermod -d /home/guest2 guest2
+grep guest2 /etc/passwd
+usermod -d /home/test guest3
+grep guest3 /etc/passwd
+cd ..
+ls -a
+grep guest_test /etc/passwd
+cd guest+test
+cd guest_test
+adduser a
+ls -a
+usermod -L a
+usermod -U a
+userdel a
+ls -al
+rm -r a
+ls -al
+passwd angel1
+cat /etc/login.defs | more
+chage -1 guest
+chage -1 guest2
+chage -1 angel1
+clear
+chage -1 angel1
+chage -E 30 -m 5 -M 1 guest2
+cat /etc/shadow
+clear
+cat /etc/passwd
+cat /etc/group
+id guest
+grep "guest" /etc/group
+grep "angel" /etc/group
+grep "guest" /etc/group
+adduser a
+adduser b
+grep "a" /etc/group
+userdel a
+ls -al
+rm a
+rm -r a
+userdel -rf b
+ls -al
+adduser kimeunseo
+userdel -rf kimeunseo
+ls -a
+adduser kimeunseo
+adduser kimdmstj
+grep "kim" /etc/group
+groupadd -g 1004 kimdmstj
+id kimdmstj
+usermod -g 1004 kimdmstj
+usermod -g 1004 kimeunseo
+grep "kim" /etc/group
+usermod -g angel kimdmstj
+grep "kim" /etc/group
+id kimdmstj
+id kimeunseo
+userdel -rf kimdmstj
+ls -al
+userdel -rf  kimeunseo
+grep kimdmstj /etc/passwd
+cat /etc/passwd
+grep kimdmstj /etc/passwd
+grep "kimdmstj" /etc/passwd
+clear
+useradd -s /bin/sh -d /home/kimdmstj -g 1004 kimdmstj
+ls -al
+ls -a
+userdel -rf kimdmstj
+grep userdel /etc/passwd
+cat /etc/passwd
+grep "kim" /etc/passwd
+cat /etc/group
+groupadd -g 1666 monster
+cat /etc/group
+grep angel1 /etc/passwd
+grep angel1 /etc/group
+id angel1
+usermod -a -G mother angel1
+groupadd -g 8282 mother
+usermod -a -G mother angel1
+id angel1
+group angel1
+group angel
+groups angel
+groups angel1
+groupdel mother
+groupdel monster
+groupdel angel
+cat /etc/group
+getent passwd guest
+getent passwd | grep '/home'
+detent group developers
+getent group developers
+getent passwd angel1
+getent passwd
+getent passwd | grep '/home/guest'
+getent group angel
+getent group 1004
+getent -s files hosts example.com
+cat /etc/nsswitch.conf
+getent passwd | awk -F : '$3 >10000 && $3 <60000 {print $1 ":" $6}'
+awk -F : '($2 ==""||$2 =="!"){print $1}' /etc/shadow
+su guest
+exit
+chown guest:guest thecat.txt
+su guest
+exit
+chown root:root thecat.txt
+su guest
+exit
+ls -al
+rm es
+ls -a
+rm a
+ls -a
+cat new_file1.txt
+cat newfile2.txt
+cat newfile3.txt
+cd new_folder
+ls -a
+cd ..
+umask
+umask -S
+umask guest
+ls -a
+umask new_foleder
+touch umask_027.txt
+mkdir umask_027.txt
+rm umask_028.txt
+rmdir -r umask_028
+ls -a
+rm -rf umask_028
+mkdir umask_027
+ls -a
+ls -al
+cat /etc/login.defs | more
+umask -S
+cat /etc/group
+id guest
+ls -a
+id umask_027
+ls -al umask_027
+cat umask_027
+ls -al
+ls -a; > thecat.txt
+ls -al > thecat.txt
+cat thecat.txt
+ls -al
+ls -a
+ls -al thecat.txt
+chown guest:guest thecat.txt
+ls -al thecat.tx
+ls -al thecat.txt
+ls -al > thecat2.txt
+ls -al thecat2.txt
+ls -al > thecat.txt
+rm thecat2.txt
+ls -a
+su guest
+exit
+mount -t vboxsf shared /home/guest/shared
+chmod 777 home/guest/shared
+ls -al
+su guest
+exit
+mount -t vboxsf shared /home/guest/shared
+./test.sh
+lsmod | grep vboxsf
+usermod -aG vboxsf guest
+su guest
+cp thecat.txt new_folder
+cd new_folder
+ls -a
+cd ..
+cp thecat.txt a.txt
+cat a.txt
+find /root -name "*alias*" -type f
+find /root/*/ -name "*alias*" -type f
+grepp -nr "alias" /root
+find /root -type f -exec grep -n "alias" {} +
+find /root -type f -name "*alias*"
+find /root -type f -name "*alias*" | nl
+id angel
+id guest
+usermod -g guest angel
+cat /etc/group
+ls -al
+groupadd -g 1004 guest
+id guest
+usermod -g guest angel
+usermod -g angel guest
+id guest
+ls -al /usr/bin/passwd
+cat /etc/shadow
+su guest
+cd ..
+chage -E -1 -m 0 -M 99999 -I -1 -w -1 guest
+chage -E -1 guest
+chage -E -1 guest2
+chage -E -1 angel1
+chage -E -1 angel2
+chage -E -1 angel_test
+chage -E -1 guest_test
+chage -1 guest
+chage -1 angel1
+exit
+cd ..
+cd /root/home
+ls -al
+cd ..
+ls -a
+cd root
+ls -a
+cat .profile
+cd /home/guest/dev
+cd /dev
+cd /etc
+ls -a
+cat login.defs
+exit
+apt-get update
+apt-get install git
+mkdir -p ~/shell_logs
+cd ~/shell_logs
+cd ..
+cd /home/guest/Desktop
+ls -a
+cd ~
+ls -a
+rm -rf shell_logs
+cd /home/guest
+su guest
+exit
+cd ..
+ls -a
+cd shell_logs
+ls -a
+git pull origin main --allow-unrelated-histories
+root@ubuntu:/home/guest/shell_logs# git pull origin main --allow-unrelated-histories
+fatal: detected dubious ownership in repository at '/home/guest/shell_logs'
+To add an exception for this directory, call:
+git config --global --add safe.directory /home/guest/shell_logs
+ls -ld /home/guest/shell_logs
+su guest
+exit
+apt-get update
+apt-get updrade
+apt-get install wine64 wine32
+dpkq --add-architecture i386
+dpkg --add-architecture i386
+wget -nc https://dl.winehq/wine-builds/winehq.key
+apt-key add winehq.key
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+apt-key add winehq.key
+add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
+apt update
+apt-get install --install-recommends winehq-stable
+apt-get install playonlinux
+exit
+apt install fonts-nanum fonts-noto-cjk
+cd ..
+cd KakaoTalk
+wine KakaoTalk.exe
+cd ..
+exit
+fdisk -l
+clear
+fdisk /dev/sdb
+df -h
+mkfs.ext4 /dev/sdb1
+cd /dev/disk/by-uuid/
+ls
+clear
+cd /
+cd /home/guest
+mkdir /new_disk
+ls
+l -a
+mount /dev/sdb1 /new_disk
+cd new_disk
+mkdir new_disk
+mount /dev/sdb1 new_disk
+cd new_disk
+ls
+ls -a
+df -h
+exit
+reboot
+cp /etc/fstab fstab_back
+gedit /etc/fstab
+ls -l /dev/disk/by-uuid/
+blkid /dev/sdb1
+exit
+systemct1 enable cron
+su guest
+exit
+apt-get update
+apt-get install php7.4 php7.4-curl php7.4-gd php7.4-json php7.4-mbstring php7.4-xml libapache2-mod-php7.4 php7.4-mysql apache2 apache2-bin apache2-data apache2-utils mysql-server phpmvadmin
+apt-get install php7.4 php7.4-curl php7.4-gd php7.4-json php7.4-mbstring php7.4-xml libapache2-mod-php7.4 php7.4-mysql apache2 apache2-bin apache2-data apache2-utils mysql-server phpmyadmin
+cd /var/www/html
+ls -al
+mysql --version
+cd /home/guest
+pwd
+wget https://ko.wordpress.org/wordpress-6.8-ko_KR.zip
+unzip wordpress-6.9-ko_KR.zip
+unzip wordpress-6.8-ko_KR.zip
+cd /var/www/html
+rm index.html
+cd /home/guest/wordpress
+mv * /var/www/html
+ls -l
+cd /var/www/html
+ls -a
+cd /home/guest/wordpress
+cd /var/www/html
+chmod -R 777
+chmod -R 777 .
+mysql -uroot -e "create database wordpress;"
+mysql -uroot -p
+use mysql;
+mysql -uroot -p
+gedit wp-config-sample.php
+cp wp-config-sample.php wp-config.php
+ls
+apt-get install vsftpd
+ls
+ls -l
+ls -a
+gedit /etc/vsftpd.conf
+service vsftpd restart
+exit
+fdisk -l
+fdisk /dev/sdb
+fdisk -l
+fdisk /dev/sdb
+gedit /etc/fstab
+ls -l /dev/disk/by-uuid
+blkid
+gedit /etc/fstab
+mount -a
+df -h
+
+gedit /etc/fstab
+blkid
+gedit /etc/fstab
+mount -a
+gedit /etc/fstab
+mount -a
+cd /mnt/mydisk
+mount -a
+ls -ld /mnt/mydisk
+mkdir -p /mnt/mydisk
+mount -a
+df -h
+gedit /etc/fstab
+rebbot
+reboot
+fdisk -l
+
+fdisk /dev/sdc
+fdisk /dev/sdd
+mdadm --create /dev/md/raid0 --level=0 -raid-devices=2 dev/mdadm --create /dev/md/raid0 --level=0 -raid-devices=2 dev/se
+cd /dev
+ls -l
+ls -a
+mdadm --create /dev/md/raid0 --level=0 -raid-devices=2 dev/se
+apt install mdadm
+mdadm --create /dev/md/raid0 --level=0 -raid-devices=2 dev/se
+mdadm --create /dev/md/raid0 --level=0 --raid-devices=2 /dev/sdb1 /dev/sdc1
+mdadm --create /dev/md/raid0 --level=0 --raid-devices=2 /dev/sdd1 /dev/sdc1
+mdadm --detail --scan
+mkfs.ext4 /dev/md/raid0
+cd /home/guest
+pwd
+mkdir /new_raid0
+mount /dev/md/raid0 /new_raid0
+df -h
+git add .
+cd ~/shell_logs
+cd /home/guest/shell_logs
+git add .
+gedit README.md
+git add .
+git commit -m "WEEK9:practice"
+git push origin main
+su guest
+exit
+apt-get install vsftpd
+gedit /etc/vsftpd.conf
+service vsftpd restart
+pwd
+cd ~/shell_logs
+cd /home
+ls -a
+cd guest
+ls -a
+cd shell_logs
+pwd
+cd /var/www/html
+cd /etc/apache2/
+ls -al
+cd sites-available
+ls
+cd ..
+cd stites-enabled
+cd sites-enabled
+ls
+gedit 000.default.conf
+cd ..
+ls
+cd sites-available
+gedit 000.default.conf
+pwd
+gedit 000.default.conf
+gedit 000-default.conf
+curl --head localhost
+cd /etc/apache2
+ls
+cd conf-enabled
+gedit security.conf
+service apache2 restart
+gedit security.conf
+a2enmod headers
+service apache2 restart
+curl --head https://naver.com
+curl --head https://google.com
+cd /var/www/html
+ls
+cp index.php index.ph
+mv index.php in
+cd /etc/apache2
+ls
+gedit apache2.conf
+service apache2 restart
+cd /var/www/html
+cp index.ph inde.php
+mv index.ph index.php
+gedit /etc/apache2/apache2.conf
+mkdir upload
+gedit /etc/apache2/apache2.conf
+service apache2 restart
+cd /etc/php
+cd etc/php/7.4/apache2
+cd 7.4
+gedit apache2/php.ini
+service apache2 restart
+gedit /etc/apache2/apache2.conf
+server apache2 restart
+service apache2 restart
+cd /home/guest
+chmod 777 apache_files_removal.sh
+./apache_files_removal.sh
+./apache_files_removal2.sh
+apahe2ctl -M
+touch /var/www/html/index.html
+chmod 777 apache_files_removal2.sh
+./apache_files_removal2.sh
+apache2ctl -M > modules.txt
+cd /home/guest
+chmod 777 apache_module_disable.sh
+./apache_module_disable.sh
+chmod 777 apache_module_disable2.sh
+./apache_module_disable2.sh
+exit
+chmod 777 ./ZAP_2_16_1_unix.sh
+./ZAP_2_16_unix.sh
+./ZAP_2_16_1_unix.sh
+exit
+apt-get install openjdk-17-jdk
+chmod 777 ./ZAP_2_16_1_unix.sh
+../
+cd ..
+chmod 777 ./ZAP_2_16_1_unix.sh
+service mysql start
+service apache2 status
+service apache2 start
+service apache2 restart
+service mysql start
+netstat -tuln | grep :80
+sestatus
+service mysql start
+cd /var/www/html/
+ls
+rm index.html
+apt-get install libapache2-mod-security2
+apachectl -M | grep security
+cd /usr/share/modsecurity-crs/
+cd /etc/modsecurity
+cd /usr/share/modsecurity-crs/
+cd /etc/modsecurity
+ls
+cp modsecurity.conf-recommended modsecurity.conf
+gedit modsecurity.conf
+service apache2 restart
+tail -f /var/log/apache2/modsec_audit.log
+cd /usr/share
+git clone https://github.com/coreruleset/coreruleset.git
+cd coreurleset
+cd coreruleset
+ls
+cp crs-setup.conf.example crs-setup.conf
+cp -r /usr/share/coreruleset/rules /etc/modsecurity/crs/
+ls -al
+cd crs
+gedit /etc/apache2/mods-enabled/security2.conf
+gedit /etc/modsecurity/crs/crs-setup.conf
+gedit /etc/modsecurity/modsecurity.conf
+service apache2 restart
+apachectl configtest
+exit
+apt-get install htop
+htop
+timeout 60 bash -c " while :; do :; done"
+htop
+apt-get update
+apt-get install stress
+timeout 60 stress --vm 1 --vm-bytes 500M --vm-keep
+stress --cpu 2 --vm 1 --vm-bytes 500M --timeout 60
+apt-get update
+apt-get install svsstat
+mpstat
+npstat
+apt-get install sysstat
+mpstat
+npstat
+mpstat -A
+iscpu
+lscpu
+cat /proc/interrupts
+vi cpu_test.sh
+chmod 777 cpu_test.sh
+cd ..
+cd guest
+ls
+cd ..
+ls
+cd ..
+ls
+cd download
+cd home/download
+cd homt
+cd home
+ls
+cd guest
+ls
+cd Downloads
+vi cpu_test.sh
+./cpu_test.sh &
+chmod 777 cpu_test.sh
+./cpu_test.sh &
+watch -n 1 uptime
+mpstat -A 1
+touch mem_test.sh
+chmod 777 mem_test.sh
+./mem_test &
+./mem_test.sh &
+vi mem_test.sh
+apt install curl
+./net_test.sh &
+curl -I http://speedtest.tele2.net/1MB.zip
+./net_test.sh
+apt install curl
+./net_test.sh
+./cpu_tesh.sh
+./net_test.sh &
+./cpu_tesh.sh &
+ls
+clear
+./net_test.sh &
+gedit net_test.sh
+./net_test.sh &
+exit
+mdadm -create /dev/md/raid0 -level=0 -raid-devices=2 dev/sdd1 /dev/sdc1
+mdadm --create /dev/md/raid0 --level=0 -raid-devices=2 dev/sdd1 /dev/sdc1
+mdadm --create /dev/md/raid0 --level=0 --raid-devices=2 dev/sdd1 /dev/sdc1
+mdadm --create /dev/md/raid0 --level=0 --raid-devices=2 dev/sdb1 /dev/sdc1
+cd ..
+cd new_raid0
+ls
+cd /etc/fstab
+cd ..
+cd /
+cd /etc/fstab
+ls
+cd home
+cd guest
+cd etc
+ls
+cd /etc
+ls
+cd fstab
+cd fstab_back
+fdisk -l
+df -h
+cd /dev
+ls
+mdadm --create /dev/md/raid0 --level=0 --raid-devices=2 dev/sdd1 /dev/sdc1
+cat sdd1
+df -h
+exit
+./ZAP_2_16_1_unix.sh
+cd ..
+ls
+cd Desktop
+ls
+cd ..
+vi test
+./pracice_test.sh
+chmod 777 pracice_test.sh
+./pracice_test.sh
+./pracice_test.sh &
+crontab -e
+./apache_fiels_removal
+cd ..
+./apache_fiels_removal
+ls
+./apache_fiels_removal.sh
+./apache_files_removal.sh
+./apache_module_disable.sh
+exit
+cat /etc/shadow
+cd /home/guest
+ls
+chage -1 guest
+chage -I  guest
+cat /etc/group
+groups angel1
+getent passwd guest
+cd /etc/passwd
+cat /etc/shadow
+id angel1
+putty.exe
+ls -al
+cat /etc/gruop
+cat /etc/group
+crontab -l
+systemctl get-default
+ps-ef | more
+pstree ah
+cd /
+pstree ah
+pstree -ah
+systemctl get-default
+cat /etc/login.defs
+ps -ef | grep -v grep | sort -nr | awk '{if ($2 >= 1048576) print $0}'
+./zombie &
+cd /home/guest
+ls
+cd shared
+./zombie &
+apt install fonts-nanum fonts-noto-cjk
+wine KakaoTalk.exe
+git add .
+cd /home/guest/shell_logs
+git add .
+git commit -m "9"
+git push origin main
+git add .
+git push origin main
+git add .
+git commit -m "9"
+git push origin main
+git pull origin main
+git push origin main
+git add .
+git commit -m "9"
+git push origin main
+cd /varwwwhtml
+cd /var/www/html
+gedit 000-default.conf
+cd /etc/apache2
+gedit 000-default.conf
+cd sites-available
+gedit 000-default.conf
+htop
